@@ -1,0 +1,12 @@
+
+<div class="create">
+    <h2>Add a new album</h2>
+    <input type="placeholder" placeholder="Add Item" [(ngModel)]="newItemText">
+    <button class="add" (click)="addItem()">Add</button>
+</div>
+<div *ngFor="let item of data.slice().reverse(); let i = index">
+    <div class="elem" (click)="goToAlbum(item.id, item.title)">
+        <a>{{item.id}} - {{item.title}}</a>
+        <button class="delete" (click)="deleteItem(data.length-i-1)">Delete</button>
+    </div>
+</div>

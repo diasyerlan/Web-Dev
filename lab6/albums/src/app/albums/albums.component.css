@@ -1,0 +1,40 @@
+a {
+    font-size:x-large
+}
+.create {
+    border: 2px solid black;
+    padding: 20px 20px;
+    margin: 20px 20px ;
+    border-radius: 20px;
+}
+input {
+    font-size: large;
+    height: 30px;
+    width: 600px;
+}
+.add {
+    font-size: large;
+    border: 1px solid rgb(130, 209, 228);
+    border-radius: 20px;
+    background-color: rgb(130, 209, 228);
+    height: 35px;
+    width: 100px;
+    margin-left: 40px;
+}
+.elem {
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.delete {
+    border: 1px solid red;
+    color: white;
+    background-color: red;
+    margin-top: -3px;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    position: absolute;
+    right: 60px;
+}

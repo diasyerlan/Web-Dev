@@ -1,0 +1,12 @@
+<div class="gen">
+    <div class="details">
+        <h1>Album id: {{id}}</h1>
+        <h1>Album Title: {{title}} </h1>
+        <button class="photos" (click)="goToPhotos(id)">Photos</button>
+        <button class="return" (click)="goBack()">Return Back</button>
+    </div>
+    <div class="change">
+        <input type="placeholder" placeholder="Change Title" [(ngModel)]="newTitleText">
+        <button (click)="changeTitle()">Save</button>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+.gen {
+    display: flex;
+}
+.details {
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+input {
+    font-size: large;
+    height: 30px;
+    width: 600px;
+}
+.change {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    font-size: large;
+    border: 1px solid rgb(130, 209, 228);
+    border-radius: 20px;
+    background-color: rgb(130, 209, 228);
+    height: 35px;
+    width: 100px;
+    margin-top: 10px;
+}
+.photos {
+    background-color: rgb(105, 203, 105);
+}
+.return {
+    width: 150px;
+    background-color: rgb(246, 103, 103);
+    margin-left: 20px;
+}

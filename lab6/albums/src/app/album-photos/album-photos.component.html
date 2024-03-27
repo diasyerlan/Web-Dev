@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="photo" *ngFor="let item of data">
+        <div class="content"></div>
+        <img src="{{item.thumbnailUrl}}" alt="">
+        <p>{{item.title}}</p>
+    </div>
+    <button (click)="goBack()">Go Back</button>
+</div>
