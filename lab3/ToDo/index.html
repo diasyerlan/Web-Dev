@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+           <p>ToDo List<p> 
+        </nav>
+    </header>
+    <h1>ToDo List</h1>
+    <div class="row">
+        <input type="text" id="input-box" placeholder="New Task">
+        <button id="add">Add</button>
+    </div>
+    <div id="tasks"></div>
+
+    <script>
+        document.querySelector('#add').onclick = function() {
+            if (document.querySelector('#input-box').value.length == 0) {
+                alert("Please Enter a Task");
+            } else {
+                document.querySelector('#tasks').innerHTML += `<div class="task"> 
+                    <input class="check" type="checkbox">
+                    <span class="taskName">${document.querySelector('#input-box').value}</span>
+                    <button class="delete"><i class="fa fa-trash-o"></i></button>
+                </div>`;
+            }
+            const tasks = document.querySelectorAll('.task');
+    
+            tasks.forEach(function(task) {
+                task.addEventListener('click', function() {
+                    const checkbox = this.querySelector('.check');
+                    const label = this.querySelector('.taskName');
+                    checkbox.checked = !checkbox.checked;
+                    label.classList.toggle('crossed-out');
+                });
+            });
+    
+            const deleteButtons = document.querySelectorAll('.delete');
+    
+            deleteButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    this.parentNode.remove();
+                });
+            });
+        }
+    </script>
+    
+</body>
+</html>
