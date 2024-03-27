@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(27, 27, 27);
+    padding: 15px;
+}
+p {
+    color: rgb(151, 151, 151);
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-left: 60px;
+
+}
+.row > * {
+    margin: 0px 30px 15px 10px;
+}
+h1 {
+   margin: 50px 0px 20px 250px
+}
+
+#tasks {
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.task {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+.task span {
+    margin-left: 10px;
+}
+.task button {
+    width: 50px;
+    height: 30px;
+    margin-top: -5px;
+    border-style: none;
+    position: absolute;
+    right: 50px;
+    background-color: white;
+}
+.task i {
+    font-size: 20px;
+    color: red;
+}
+.crossed-out {
+    text-decoration: line-through;
+}
+
+
+
